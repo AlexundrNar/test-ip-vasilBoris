@@ -1,0 +1,49 @@
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col m-2">
+    <div class="card p-4">
+      <div>
+        <h2 class="pr-5">{{income.length}}</h2>
+        <p>Income</p>
+        <div class="text-right">
+          <a routerLink="/navigator" [queryParams]="{tab: 0}" class="btn btn-primary px-5 font-weight-bold text-decoration-none text-white">See all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col m-2">
+    <div class="card p-4">
+      <div>
+        <h2 class="pr-5">{{outcome.length}}</h2>
+        <p>Investments</p>
+        <div class="text-right">
+          <a routerLink="/navigator" [queryParams]="{tab: 2}" class="btn btn-primary px-5 font-weight-bold text-decoration-none text-white">See all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col m-2">
+    <div class="card p-4">
+      <div>
+        <h2 class="pr-5">{{investment.length}}</h2>
+        <p>Outcome</p>
+        <div class="text-right">
+          <a routerLink="/navigator" [queryParams]="{tab: 1}" class="btn btn-primary px-5 font-weight-bold text-decoration-none text-white">See all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col m-2">
+    <div class="card p-4">
+      <div>
+        <h2 class="pr-5">{{loans.length}}</h2>
+        <p>loans</p>
+        <div class="text-right">
+          <a routerLink="/navigator" [queryParams]="{tab: 3}" class="btn btn-primary px-5 font-weight-bold text-decoration-none text-white">See all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

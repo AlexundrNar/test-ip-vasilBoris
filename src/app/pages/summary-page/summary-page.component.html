@@ -1,0 +1,19 @@
+<div class="container" style="width: 42rem;">
+  <div class="card m-2 text-center">
+    <div class="card-header py-3"></div>
+    <div>
+      <h2 class="pr-5 pt-3">Welcome</h2>
+      <p>With supporting text below as a natural lead-in to additional content.</p>
+      <a routerLink="/navigator" [queryParams]="{tab: 0}"
+        class="btn btn-primary mb-3 font-weight-bold text-decoration-none text-white">See transactions</a>
+    </div>
+    <div class="card-footer py-2">You have {{transactions.length}} transactions</div>
+  </div>
+  
+  <app-transaction
+    [income]="income"
+    [outcome]="outcome"
+    [investment]="investment"
+    [loans]="loans"
+  ></app-transaction>
+</div>
